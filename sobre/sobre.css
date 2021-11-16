@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+}
+html, body{
+
+     height: 100%;
+     font-family: 'Rasa', serif;
+
+     --colorTitulo: hsl(0, 100%, 99%);
+     
+    
+
+}
+
+body{
+    display: grid;
+    place-items: center;
+}
+
+main{
+    background: url(imagesSobre/bgSobre.png);
+
+    width: 360px;
+    height: 640px;
+}
+
+.content{
+    text-align: center;
+}
+
+img{
+    width: 80px;
+    height: 100.5px;
+
+   margin: 32.5rem auto auto 5rem;
+
+   position: absolute;
+   transform: rotate(6.75deg);
+}
+
+h1{
+
+    font-size: 1.5rem;
+
+    width: 225px;
+    height: 23px;
+    margin: 20rem auto auto 5rem;
+    
+    color: var(--colorTitulo);
+    position: absolute;
+
+}
+
+p{  
+    width: 317px;
+    height: 367px;
+
+    margin: 23rem auto auto 0.93rem;
+ 
+    color: var(--colorTitulo);
+
+    position: absolute;
+
+}
+
+footer{
+    position: absolute;
+    margin-top: 619px;
+    
+    color: var(--colorTitulo);
+}

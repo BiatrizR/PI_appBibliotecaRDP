@@ -1,0 +1,118 @@
+/**seletor universal, atribuição para todos os elementos da página*/
+*{
+    margin: 0;
+
+}
+
+/*seletor de tags somente*/
+html, body{
+    height: 100%;
+
+    font-family: 'Rasa', serif;
+    -webkit-font-smoothing: antialiased;
+
+    --colorTitulo: hsl(0, 100%, 99%);
+}
+
+body {
+    display: grid;
+    place-items: center;
+
+      /*background-color: rgba(0, 190, 190, 0.815); colocar imagem versão desktop*/
+}
+
+
+h1{
+    font-size: 2rem;
+
+    width: 360px;
+    height: 640px;
+    margin: -19rem -45px 0;
+   
+
+}
+
+h4{
+
+    font-size: 1rem;
+    width: 190px;
+
+    height: 20px;
+    margin: -22rem auto 2rem;
+
+}
+
+main {
+    background: url(images/bgim.png);
+    width: 360px;
+    height: 640px;
+
+}
+
+.content{
+    max-width: 258px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    
+    color: var(--colorTitulo);
+  
+    
+}
+
+.books{
+    width: 210px;
+    height: 140px;
+
+    margin: 205px auto auto;
+    
+    }
+
+  
+.books span{
+    position:absolute;
+    
+    width: 87px;
+    height: 88px;
+
+    margin: -8rem -9.5rem 20rem;
+}
+
+a{
+    color:black;
+    text-decoration: none;
+}
+
+ul {
+   
+    margin-top: 20px;
+
+    list-style: none;
+    padding: 0;
+    
+    display: block;
+    justify-content: center;
+}
+
+.categories{
+    position: absolute;
+    margin: 5px  45px auto;
+}
+
+.about{
+    position: absolute;
+    margin: 80px  45px auto;
+}
+
+.intern{
+    position: absolute;
+    margin: 180px  45px auto;
+    
+}
+footer{
+    position: absolute;
+    margin-top: 619px;
+    
+    color: var(--colorTitulo);
+}
