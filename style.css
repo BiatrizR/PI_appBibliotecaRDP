@@ -1,10 +1,10 @@
-/**seletor universal, atribuição para todos os elementos da página*/
+
 *{
     margin: 0;
 
 }
 
-/*seletor de tags somente*/
+
 html, body{
     height: 100%;
 
