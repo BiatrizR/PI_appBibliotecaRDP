@@ -1,28 +1,4 @@
-<?php
 
-if(isset($_POST['submit'])){
-
-    //print_r('Titulo: ' . $_POST['titulolivro']);
-    //print_r('<br>');
-    //print_r('Autor: ' . $_POST['nomeautor']);
-    //print_r('<br>');
-    //print_r('Edição: ' . $_POST['anoedicao']);
-    //print_r('<br>');
-    //print_r('Categoria: ' . $_POST['categ']);
-    
-    include_once('config.php');
-
-    $titulo = $_POST['titulolivro'];
-    $nomeautor = $_POST['nomeautor'];
-    $edicao = $_POST['anoedicao'];
-    $categoria = $_POST['categ'];
-
-
-    $result = mysqli_query($conexao, "INSERT INTO livros(titulo,autor,edicao,categoria) 
-    VALUES ('$titulo','$nomeautor','$edicao','$categoria')");
-}
-
-?>
 
 <?php
     session_start();
@@ -36,7 +12,31 @@ if(isset($_POST['submit'])){
         header('Location: login.php');
     }
 
-    $logado = $_SESSION['usuario'];
+
+//$sql = "SELECT * FROM livros ORDER BY idlivros DESC";
+//$result = $conexao->query($sql);
+?>
+
+
+
+<?php
+
+if(isset($_POST['submit'])){
+
+       
+    include_once('config.php');
+
+    $titulo = $_POST['titulolivro'];
+    $nomeautor = $_POST['nomeautor'];
+    $edicao = $_POST['anoedicao'];
+    $categoria = $_POST['categ'];
+
+
+    $result = mysqli_query($conexao, "INSERT INTO livros(titulo,autor,edicao,categoria) 
+    VALUES ('$titulo','$nomeautor','$edicao','$categoria')");
+}
+
+$logado = $_SESSION['usuario'];
 ?>
 
 <!DOCTYPE html>
@@ -66,14 +66,13 @@ if(isset($_POST['submit'])){
             </button>
         </div>
         <div class="d-flex">
-            <a href="avancar.php" class="btn btn-primary me-5">Editar</a>
+            <a href="infantoJuvenil.php" class="btn btn-primary me-5">Lista</a>
         </div>
 
         <div class="flex">
             <a href="sair.php" class="btn btn-danger me-5">Sair</a>
         </div>
-
-       
+      
     </nav>
 
   
