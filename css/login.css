@@ -1,0 +1,36 @@
+html,body {
+  font-family: 'Rasa', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+
+  color: #f5f1f1;
+}
+
+
+.hero.is-success {
+  background: linear-gradient(to right, rgb(20, 147, 220), rgb(17,54,71));
+  
+}
+
+.hero .nav, .hero.is-success .nav {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+input {
+  font-weight: 300;
+}
+p {
+  font-weight: 700;
+}
+
+
+
+button{
+
+  background:  linear-gradient(to right, rgb(2, 182, 206), rgb(0, 123, 145));
+}
+
+button:hover{
+
+  background-image: linear-gradient(to right, rgb(248, 244, 15), rgb(218, 214, 7));
+}
